@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <meta name="description" content="this is my form">
+</head>
+
+<body>
+    <div>
+        <h1> welcome </h1>
+        <p> this is my page </p>
+    </div>
+    <form action="" method="get">
+        <div class="username">
+            <label> username</label>
+            <input type="text" required placeholder="username" name="user">
+        </div>
+        <br>
+        <div class="subject">
+            <label>subject</label>
+            <input type="text" placeholder="subject" name="sub">
+        </div>
+        <br>
+        <div class="password">
+            <label>password</label>
+            <input type="password" required placeholder="write a complex pass" name="pass" minlength="8" maxlength="15">
+        </div>
+        <br>
+        <div class="mail">
+            <label>mail</label>
+            <input type="email" required value="saad@gmail.com" name="mail">
+        </div>
+        <br>
+        <div class="range">
+            <label>range</label>
+            <input type="range" min="0" max="100" value="0" step="25">
+        </div>
+        <hr>
+        <div class="number">
+            <label for="num">number</label>
+            <input id="num" type="number" min="0" max="10" value="0" step="2">
+        </div>
+        <div>
+            <input id="win" type="radio" checked name="os" value="windows">
+            <label for="win"> windows</label>
+        </div>
+        <div>
+            <input id="lin" type="radio" name="os" value="linux">
+            <label for="lin">linux</label>
+        </div>
+        <div>
+            <input id="mac" type="radio" name="os" value="mac">
+            <label for="mac">mac</label>
+        </div>
+        <div>
+            <input type="checkbox" name="os" id="mo" checked>
+            <label for="mo"> A</label>
+        </div>
+        <div>
+            <input type="checkbox" name="os" id="sa">
+            <label for="sa"> B</label>
+        </div>
+        <div>
+            <input type="checkbox" name="os" id="sl" checked>
+            <label for="sl"> C</label>
+        </div>
+        <label for="book">books</label>
+        <select name="book" id="book" multiple>
+            <optgroup label="decmial">
+                <option value="a"> book a</option>
+                <option value="b"> book b</option>
+                <option value="c"> book c</option>
+            </optgroup>
+            <optgroup label="number">
+                <option value="1" selected> book 1</option>
+                <option value="2"> book 2</option>
+                <option value="3"> book 3</option>
+            </optgroup>
+        </select>
+        <hr>
+        <div>
+            <label for="saad"></label>
+            <textarea name="saad" id="saad" placeholder="text" rows="5" cols="15"></textarea>
+        </div>
+        <hr>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="month">Month</label>
+            <input type="month" id="month">
+        </div>
+        <br>
+        <div>
+            <label for="time">Time</label>
+            <input type="time" id="time">
+        </div>
+        <br>
+        <div>
+            <label for="url">Url</label>
+            <input type="url" id="url">
+        </div>
+        <br>
+        <div>
+            <label> names</label>
+            <input list="programming" name="prog">
+            <datalist id="programming">
+                <option value="saad"></option>
+                <option value="ali"></option>
+                <option value="mo"></option>
+                <option value="kord"></option>
+            </datalist>
+        </div>
+        <br>
+        <label for="mos"> names</label>
+        <select name="ideas" id="mos">
+            <optgroup label="name">
+                <option value="saad">X</option>
+                <option value="ali">Y</option>
+                <option value="mo">Z</option>
+                <option value="kord">W</option>
+            </optgroup>
+        </select>
+        <hr>
+        <div>
+            <input type="submit" value="save">
+            <input type="reset" value="reset">
+        </div>
+        <br>
+    </form>
+</body>
+
+</html>
